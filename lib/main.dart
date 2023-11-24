@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sharedprefference/view/splash_screen.dart/splashscreen.dart';
-
+//create Instagram ui clone with shared preference login?
 void main() {
   runApp(const MyApp());
 }
