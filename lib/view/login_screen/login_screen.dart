@@ -6,7 +6,7 @@ class LoginScreen extends StatelessWidget {
   final TextEditingController _nameController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
 
-  Future<void> _saveCredentials(String name, String password) async {
+  Future<void> _save(String name, String password) async {
     final SharedPreferences prefs = await SharedPreferences.getInstance();
     prefs.setString("name", name);
     prefs.setString("password", password);
@@ -53,7 +53,7 @@ class LoginScreen extends StatelessWidget {
           SizedBox(height: 10),
           ElevatedButton(
             onPressed: () async {
-              await _saveCredentials(
+              await _save(
                 _nameController.text,
                 _passwordController.text,
               );
