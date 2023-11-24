@@ -105,6 +105,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                   ),
                   Container(
+                    height: 60,
                     width: MediaQuery.of(context).size.width * 0.9,
                     child: Row(
                       children: [
